@@ -62,14 +62,17 @@ class PupiFloatingService : Service() {
     private var pendingTapZone: String? = null
 
     private var pupiView: PupiSpriteView? = null
+    private lateinit var soundManager: PupiSoundManager
 
     override fun onCreate() {
         super.onCreate()
 
         startForegroundServiceNotification()
+        soundManager = PupiSoundManager(this)
         setupOverlayView()
         startEngineHeartbeat()
         startAutonomousMovement()
+
     }
 
     private fun startForegroundServiceNotification() {
@@ -106,7 +109,7 @@ class PupiFloatingService : Service() {
             getSystemService(WINDOW_SERVICE) as WindowManager
 
         val density = resources.displayMetrics.density
-        val sizePx = (160 * density).toInt()
+        val sizePx = (50 * density).toInt()
 
         layoutParams = WindowManager.LayoutParams(
             sizePx,
@@ -259,6 +262,7 @@ class PupiFloatingService : Service() {
                         happyUntil = 0L
 
                         pupiView?.playCuddleReaction()
+                        soundManager.play("cuddle")
 
                         Toast.makeText(
                             this,
@@ -360,6 +364,7 @@ class PupiFloatingService : Service() {
 
             val direction = chooseJumpDirection()
             startDirectionalJump(direction)
+            soundManager.play("tap_happy")
 
         } else {
 
@@ -367,6 +372,7 @@ class PupiFloatingService : Service() {
             happyUntil = now + 800L
 
             pupiView?.playSurpriseReaction()
+            soundManager.play("tap_surprise")
         }
 
         val message =
@@ -394,6 +400,7 @@ class PupiFloatingService : Service() {
         happyUntil = now + 2000L
 
         pupiView?.playHappyReaction()
+        soundManager.play("double_happy")
 
         Toast.makeText(
             this,
@@ -736,7 +743,7 @@ class PupiFloatingService : Service() {
 
         overlayView = null
         pupiView = null
-
+        soundManager.release()
         super.onDestroy()
     }
 
