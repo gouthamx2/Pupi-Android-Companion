@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUPI — Android Floating 3D Pet Simulator & Verification Hub</title>
+<style>
+  :root {
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --accent: #38bdf8;
+    --accent-gold: #f59e0b;
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+    --pupi-fur: #fffbeb;
+    --pupi-caramel: #b45309;
+    --pupi-collar: #ef4444;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  /* Simulator Workspace */
+  .layout-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 24px;
+    gap: 24px;
+  }
+  .phone-frame-wrapper {
+    flex: 0 0 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .phone-device {
+    width: 360px;
+    height: 720px;
+    background: #000;
+    border-radius: 44px;
+    border: 8px solid #334155;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    user-select: none;
+  }
+  .phone-notch {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 24px;
+    background: #1e293b;
+    border-radius: 12px;
+    z-index: 100;
+  }
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    position: relative;
+    overflow: hidden;
+  }
+  /* Mock Host App running beneath Pupi */
+  .mock-app-bg {
+    padding: 60px 16px 20px 16px;
+    opacity: 0.45;
+  }
+  .mock-bubble {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  /* PUPI 3D Companion Overlay Element */
+  #pupi-overlay {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 110px;
+    top: 280px;
+    z-index: 50;
+    cursor: grab;
+    transition: transform 0.1s ease-out;
+  }
+  #pupi-overlay:active {
+    cursor: grabbing;
+  }
+  .pupi-avatar-canvas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .pupi-dialogue {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid var(--accent);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  /* Control Panel & Engine Inspector */
+  .dashboard {
+    flex: 1;
+    background: var(--card-bg);
+    border-radius: 24px;
+    border: 1px solid #334155;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+  }
+  .header h1 {
+    font-size: 24px;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .header p {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .stat-card {
+    background: #0f172a;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+  }
+  .stat-title {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .stat-bar-bg {
+    width: 100%;
+    height: 8px;
+    background: #334155;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .stat-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  .actions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .btn {
+    background: #334155;
+    color: var(--text-primary);
+    border: 1px solid #475569;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn:hover {
+    background: #475569;
+    border-color: var(--accent);
+  }
+  .btn-accent {
+    background: var(--accent);
+    color: #0f172a;
+    border: none;
+  }
+  .btn-accent:hover {
+    background: #7dd3fc;
+  }
+  .log-console {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 14px;
+    font-family: monospace;
+    font-size: 11px;
+    height: 160px;
+    overflow-y: auto;
+    color: #38bdf8;
+  }
+</style>
+</head>
+<body>
+
+<div class="layout-container">
+  <!-- Android Smartphone Viewport -->
+  <div class="phone-frame-wrapper">
+    <div class="phone-device">
+      <div class="phone-notch"></div>
+      <div class="phone-screen" id="screen-boundary">
+        <!-- Mock background app (Reader/Browser) to prove overlay capability -->
+        <div class="mock-app-bg">
+          <div style="font-size: 12px; color: #94a3b8; margin-bottom: 8px;">BACKGROUND APP (CHROME / DOCS)</div>
+          <div class="mock-bubble" style="height: 60px;"></div>
+          <div class="mock-bubble" style="height: 90px;"></div>
+          <div class="mock-bubble" style="height: 120px;"></div>
+          <div class="mock-bubble" style="height: 80px;"></div>
+        </div>
+
+        <!-- PUPI FLOATING COMPANION -->
+        <div id="pupi-overlay">
+          <div class="pupi-dialogue" id="pupi-bubble">Boof!</div>
+          <div class="pupi-avatar-canvas" id="pupi-render-target">
+            <!-- Procedural 3D-Look Vector Puppy Canvas -->
+            <svg id="pupi-svg" viewBox="0 0 160 160" width="130" height="130">
+              <!-- Body -->
+              <ellipse cx="80" cy="98" rx="36" ry="32" fill="#fffbeb" stroke="#b45309" stroke-width="2.5"/>
+              <ellipse cx="98" cy="95" rx="16" ry="14" fill="#d97706" opacity="0.6"/> <!-- Caramel patch -->
+              <!-- Floppy Ears with bouncy animation -->
+              <path id="left-ear" d="M 46 54 C 18 36, 12 75, 42 78" fill="#b45309" stroke="#78350f" stroke-width="2"/>
+              <path id="right-ear" d="M 114 54 C 142 36, 148 75, 118 78" fill="#b45309" stroke="#78350f" stroke-width="2"/>
+              <!-- Head -->
+              <circle cx="80" cy="68" r="40" fill="#fffbeb" stroke="#b45309" stroke-width="2.5"/>
+              <ellipse cx="62" cy="60" rx="14" ry="18" fill="#d97706" opacity="0.4"/> <!-- Left Eye Patch -->
+              <!-- Eyes with Specular Sparkle -->
+              <g id="pupi-eyes">
+                <circle cx="64" cy="64" r="8" fill="#451a03"/>
+                <circle cx="62" cy="62" r="2.8" fill="#ffffff"/>
+                <circle cx="96" cy="64" r="8" fill="#451a03"/>
+                <circle cx="94" cy="62" r="2.8" fill="#ffffff"/>
+              </g>
+              <!-- Snout & Nose -->
+              <ellipse cx="80" cy="74" rx="14" ry="10" fill="#fef3c7"/>
+              <ellipse cx="80" cy="71" rx="6" ry="4" fill="#1e293b"/>
+              <!-- Mouth -->
+              <path id="pupi-mouth" d="M 72 79 Q 80 87 88 79" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+              <!-- Tail -->
+              <path id="pupi-tail" d="M 116 100 Q 135 90 128 75" fill="none" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+              <!-- Red Collar with Brass 'PUPI' Tag -->
+              <rect x="52" y="104" width="56" height="8" rx="4" fill="#ef4444" stroke="#991b1b" stroke-width="1.5"/>
+              <circle cx="80" cy="118" r="8" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+              <text x="80" y="121" font-size="5.5" font-weight="900" font-family="Arial" text-anchor="middle" fill="#78350f">PUPI</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Real-time Behaviour Engine Dashboard -->
+  <div class="dashboard">
+    <div class="header">
+      <h1>PUPI Runtime Engine & Behaviour Simulator</h1>
+      <p>Simulating WindowManager TYPE_APPLICATION_OVERLAY & Deterministic Behaviour State Engine</p>
+    </div>
+
+    <!-- Stat Bars -->
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-title"><span>HUNGER</span><span id="txt-hunger">80%</span></div>
+        <div class="stat-bar-bg"><div class="stat-bar-fill" id="bar-hunger" style="width: 80%; background: #f59e0b;"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title"><span>HAPPINESS</span><span id="txt-happiness">85%</span></div>
+        <div class="stat-bar-bg"><div class="stat-bar-fill" id="bar-happiness" style="width: 85%; background: #ec4899;"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title"><span>ENERGY</span><span id="txt-energy">90%</span></div>
+        <div class="stat-bar-bg"><div class="stat-bar-fill" id="bar-energy" style="width: 90%; background: #10b981;"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title"><span>FRIENDSHIP</span><span id="txt-friendship">50%</span></div>
+        <div class="stat-bar-bg"><div class="stat-bar-fill" id="bar-friendship" style="width: 50%; background: #8b5cf6;"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title"><span>CLEANLINESS</span><span id="txt-cleanliness">85%</span></div>
+        <div class="stat-bar-bg"><div class="stat-bar-fill" id="bar-cleanliness" style="width: 85%; background: #06b6d4;"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title"><span>CURRENT EMOTION</span><span id="txt-emotion" style="color: #38bdf8;">HAPPY</span></div>
+        <div style="font-size: 11px; color: #94a3b8; margin-top: 4px;">State: <strong id="txt-state">IDLE_BREATHE</strong></div>
+      </div>
+    </div>
+
+    <!-- Compact Floating Actions -->
+    <div>
+      <h3 style="font-size: 14px; margin-bottom: 10px; color: #cbd5e1;">FLOATING RADIAL HUD ACTIONS</h3>
+      <div class="actions-grid">
+        <button class="btn" onclick="triggerAction('feed')">🍖 Feed Treat</button>
+        <button class="btn" onclick="triggerAction('pet')">🖐️ Pet Head</button>
+        <button class="btn" onclick="triggerAction('play')">🎾 Play Fetch</button>
+        <button class="btn" onclick="triggerAction('sleep')">🌙 Go Sleep</button>
+        <button class="btn" onclick="triggerAction('clean')">🧼 Clean & Bath</button>
+        <button class="btn" onclick="triggerAction('voice')">🎙️ Voice Reminder</button>
+        <button class="btn" onclick="triggerAction('cloud_sync')">☁️ Multi-Phone Sync</button>
+        <button class="btn btn-accent" onclick="window.open('/PUPI_Master_Submission.pdf', '_blank')">📄 View Master PDF</button>
+      </div>
+    </div>
+
+    <!-- Live Execution Logs -->
+    <div>
+      <h3 style="font-size: 14px; margin-bottom: 10px; color: #cbd5e1;">REAL-TIME BEHAVIOUR & SYSTEM LOGS</h3>
+      <div class="log-console" id="log-console">
+[SYSTEM] PupiForegroundService initialized.
+[SYSTEM] WindowManager: Overlay attached (TYPE_APPLICATION_OVERLAY).
+[ENGINE] PupiBehaviorEngine tick loop running (15s interval).
+[ENGINE] Current state: IDLE_BREATHE | Emotion: HAPPY.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Pupi Runtime Engine simulation mirroring PupiBehaviorEngine.kt
+  const state = {
+    hunger: 80.0,
+    happiness: 85.0,
+    energy: 90.0,
+    friendship: 50.0,
+    cleanliness: 85.0,
+    emotion: "HAPPY",
+    behavior: "IDLE_BREATHE"
+  };
+
+  const overlay = document.getElementById('pupi-overlay');
+  const screen = document.getElementById('screen-boundary');
+  const logConsole = document.getElementById('log-console');
+  const bubble = document.getElementById('pupi-bubble');
+
+  function log(msg) {
+    const time = new Date().toLocaleTimeString();
+    logConsole.innerHTML += `\n[${time}] ${msg}`;
+    logConsole.scrollTop = logConsole.scrollHeight;
+  }
+
+  function speak(text) {
+    bubble.innerText = text;
+    bubble.style.opacity = '1';
+    setTimeout(() => { bubble.style.opacity = '0'; }, 2500);
+  }
+
+  function updateUI() {
+    document.getElementById('txt-hunger').innerText = Math.round(state.hunger) + '%';
+    document.getElementById('bar-hunger').style.width = state.hunger + '%';
+
+    document.getElementById('txt-happiness').innerText = Math.round(state.happiness) + '%';
+    document.getElementById('bar-happiness').style.width = state.happiness + '%';
+
+    document.getElementById('txt-energy').innerText = Math.round(state.energy) + '%';
+    document.getElementById('bar-energy').style.width = state.energy + '%';
+
+    document.getElementById('txt-friendship').innerText = Math.round(state.friendship) + '%';
+    document.getElementById('bar-friendship').style.width = state.friendship + '%';
+
+    document.getElementById('txt-cleanliness').innerText = Math.round(state.cleanliness) + '%';
+    document.getElementById('bar-cleanliness').style.width = state.cleanliness + '%';
+
+    document.getElementById('txt-emotion').innerText = state.emotion;
+    document.getElementById('txt-state').innerText = state.behavior;
+  }
+
+  function triggerAction(action) {
+    switch (action) {
+      case 'feed':
+        state.hunger = Math.min(100, state.hunger + 25);
+        state.happiness = Math.min(100, state.happiness + 5);
+        state.behavior = "EATING";
+        state.emotion = "HAPPY";
+        speak("Nom nom nom! Tasty!");
+        log("User Fed Pupi. Hunger +25, Happiness +5.");
+        break;
+      case 'pet':
+        state.happiness = Math.min(100, state.happiness + 10);
+        state.friendship = Math.min(100, state.friendship + 2);
+        state.behavior = "BEING_PETTED";
+        state.emotion = "HAPPY";
+        speak("*Wags tail excitedly* Boof!");
+        log("User Petted Pupi. Happiness +10, Friendship +2.");
+        break;
+      case 'play':
+        state.happiness = Math.min(100, state.happiness + 15);
+        state.energy = Math.max(0, state.energy - 12);
+        state.behavior = "PLAYING";
+        state.emotion = "HAPPY";
+        speak("I got the ball! Good boy Pupi!");
+        log("Mini-game: Ball Fetch triggered. Happiness +15, Energy -12.");
+        break;
+      case 'sleep':
+        state.behavior = "SLEEPING";
+        state.emotion = "SLEEPY";
+        speak("Zzz... nap time...");
+        log("Pupi curled up on screen edge to sleep.");
+        break;
+      case 'clean':
+        state.cleanliness = 100;
+        state.happiness = Math.min(100, state.happiness + 6);
+        state.behavior = "STRETCHING";
+        speak("All squeaky clean!");
+        log("Pupi groomed and cleaned. Cleanliness set to 100%.");
+        break;
+      case 'voice':
+        speak("Julian, don't forget to drink water!");
+        log("[TextToSpeech] Reminding user: 'Drink water' via AlarmManager dispatch.");
+        break;
+      case 'cloud_sync':
+        log("[OCC Cloud Fanout] Phone A dispatches state version=105 to WebSocket -> Phone B updated.");
+        speak("Synced with Phone B!");
+        break;
+    }
+    updateUI();
+  }
+
+  // Dragging logic simulating Android WindowManager touch clamping
+  let isDragging = false;
+  let startX, startY, initialLeft, initialTop;
+
+  overlay.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    initialLeft = overlay.offsetLeft;
+    initialTop = overlay.offsetTop;
+    e.preventDefault();
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+
+    let newX = initialLeft + dx;
+    let newY = initialTop + dy;
+
+    // Clamping to screen boundaries
+    const maxX = screen.clientWidth - overlay.clientWidth;
+    const maxY = screen.clientHeight - overlay.clientHeight;
+
+    newX = Math.max(0, Math.min(newX, maxX));
+    newY = Math.max(40, Math.min(newY, maxY));
+
+    overlay.style.left = newX + 'px';
+    overlay.style.top = newY + 'px';
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (isDragging) {
+      isDragging = false;
+      log(`Pupi repositioned to (${overlay.offsetLeft}, ${overlay.offsetTop}).`);
+    }
+  });
+
+  // Ticker loop
+  setInterval(() => {
+    state.hunger = Math.max(0, state.hunger - 0.5);
+    state.energy = Math.max(0, state.energy - 0.3);
+    updateUI();
+  }, 10000);
+
+  updateUI();
+</script>
+</body>
+</html>

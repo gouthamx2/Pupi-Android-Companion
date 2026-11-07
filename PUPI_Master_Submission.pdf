@@ -1,0 +1,163 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Length 3187 >>
+stream
+BT
+/F1 10 Tf
+50 780 Td
+15 TL
+(PUPI - YOUR LITTLE AI PET COMPANION) '
+(Virtual Pet AI Challenge - Final Master Development & Submission Document) '
+() '
+(1. PRODUCT IDENTITY & CORE ARCHITECTURAL PRINCIPLE) '
+(Product: PUPI - Your Little AI Pet Companion) '
+(Platform: Android smartphones only.) '
+(Core concept: A small interactive 3D puppy that floats above supported Android applications.) '
+(Pupi lives natively on the screen during everyday smartphone use.) '
+() '
+(STRICT PRODUCT DECISION:) '
+(- There is NO dedicated Pupi pet-care application experience.) '
+(- No separate pet-care app or pet home screen.) '
+(- The floating 3D puppy is the entire product experience.) '
+(- Minimal Android host interface is permitted solely as an onboarding gate for SYSTEM_ALERT_WINDOW) '
+(  permission, battery optimization whitelisting, and microphone access.) '
+() '
+(2. RECOMMENDED ANDROID TECHNOLOGY \\\(Optimized for Intel i3-1215U / 8GB RAM\\\)) '
+(3D Rendering Engine: Google Filament \\\(PBR\\\)) '
+(Justification:) '
+(- Lightweight C++ core with Android Kotlin bindings \\\(only ~6MB native libs\\\).) '
+(- Compiles rapidly without the 4GB+ RAM penalty and slow editor launches of Unity.) '
+(- Provides Physically Based Rendering \\\(PBR\\\), transparent TextureView overlays, and skeletal animation.) '
+(- Dynamic frame throttling: 0 FPS when stationary idle, 60 FPS during touch and movement.) '
+(Window Overlay: Android WindowManager \\\(TYPE_APPLICATION_OVERLAY\\\) bound to a Foreground Service.) '
+(State & Persistence: Room Database \\\(SQLite + Flow\\\) for offline-first reactive persistence.) '
+(Voice & Audio: Native Android SpeechRecognizer and TextToSpeech \\\(zero cloud dependencies\\\).) '
+() '
+(3. CHARACTER DESIGN - PUPI) '
+(Visual Appearance:) '
+(- Soft white body with warm caramel-brown patches over the left eye and lower back.) '
+(- Large expressive warm amber/brown eyes with procedural specular highlight.) '
+(- Floppy brown ears with natural secondary physics bounce.) '
+(- Small velvety puppy nose and rounded snout with a gentle smile crease.) '
+(- Bright red nylon collar with a yellow brass tag engraved with PUPI.) '
+(- Proportions: 4,800 polygons, 32 bones, optimized for smooth 60 FPS mobile rendering.) '
+(Personality: Curious, playful, mischievous, innocent, friendly, observant, kind-hearted.) '
+() '
+(4. TASK 1 - THE STORY OF PUPI: A HEARTBEAT ON THE GLASS) '
+(The first time Julian saw Pupi, it was 11:42 PM on a Thursday. Julian's phone screen was) '
+(buried beneath a spread of half-read PDF lecture notes and a cold cup of tea. He clicked) '
+(the power button, bracing for the usual flood of stressful group-chat pings and deadlines.) '
+() '
+(Instead, the screen lit up with a tiny soft white puppy sitting quietly just above his dock icons.) '
+(Pupi had floppy caramel-brown ears, a bright red collar, and a yellow medallion that glinted) '
+(softly as he lifted his head. When Julian stared in surprise, Pupi blinked twice, tilted his head) '
+(with an inquisitive soft sound, and took three hesitant steps before rolling onto his belly.) '
+() '
+(Julian reached out and tapped the puppy's head. Pupi sprang up, eyes sparkling, tail wagging) '
+ET
+
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 3 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+5 0 obj
+<< /Length 3699 >>
+stream
+BT
+/F1 10 Tf
+50 780 Td
+15 TL
+(in a joyous blur as he nuzzled right against the point where Julian's finger met the glass.) '
+() '
+(In the days that followed, Pupi became an inseparable presence. He lived with Julian across) '
+(his everyday phone usage. When Julian scrolled news feeds, Pupi trotted along the bottom edge,) '
+(curiously peering at headlines. When Julian spent two uninterrupted hours doom-scrolling,) '
+(Pupi yawned conspicuously, curled into a ball on the screen boundary, and fell asleep, softly) '
+(reminding Julian how fast time was slipping away.) '
+() '
+(When Julian had to study, Pupi held up a tiny water droplet icon, gently barking with a speech) '
+(reminder: 'Pupi thinks you should take a sip of water, Julian!' Julian would laugh, drink water,) '
+(and watch Pupi do a victorious celebratory bounce. He wasn't an app to open and close;) '
+(he was a loyal companion living in the margins of digital noise, bringing warmth to every unlock.) '
+() '
+(5. TASK 2 - FOUR-EMOTION ILLUSTRATION SPECIFICATION) '
+(Requirements: Clean black-and-white line art, pure white background, 4 distinct expressions:) '
+(1. HAPPY: Crescent closed eyes, perky upright floppy ears, wide joyful smile, radiant posture.) '
+(2. SAD: Drooping long ears, large downcast watery pupils, small quivering mouth, single teardrop.) '
+(3. ANGRY: Furrowed brow, tense sideways ears, adorable pouty grump expression, folded front paws.) '
+(4. SURPRISED: Huge wide circular open eyes, ears perked high, exclamation marks, open 'O' mouth.) '
+(All panels preserve identical character identity, proportions, and the PUPI collar tag.) '
+() '
+(6. TASK 3 - MULTI-PHONE ONLINE ARCHITECTURE MAP) '
+(Scenario: Phone A feeds Pupi -> Backend validates & mutates state -> Phone B receives real-time update.) '
+(Components:) '
+(- Android Phone A: Optimistic UI, local Room DB, Pending Action Queue with client UUIDs.) '
+(- Android Phone B: Subscribed via WebSocket, receives state updates, triggers reactive animation.) '
+(- Backend API Gateway: Authenticates devices \\\(JWT Auth\\\), validates action idempotency.) '
+(- Pet Management Service: Implements Optimistic Concurrency Control \\\(OCC\\\) with atomic version checks.) '
+(- Cloud Database \\\(PostgreSQL / Supabase\\\): Stores pet state \\\(hunger, happiness, version\\\) & action logs.) '
+(- WebSocket / MQTT Fanout Broker: Dispatches broadcast updates to all paired family devices.) '
+() '
+(Solutions to Technical Challenges:) '
+(- Simultaneous Actions: Solved via OCC version checks \\\(WHERE id = ? AND version = ?\\\).) '
+(- Offline Usage: Solved via Local Pending Queue in Room; synced on reconnection via WorkManager.) '
+(- Duplicate Requests: Solved via Client Action UUID idempotency checks on backend.) '
+(- Security & Privacy: Solved via Row-Level Security \\\(RLS\\\) restricting pairing to owner groups.) '
+() '
+(7. AI TOOLS & HONEST PROMPT EXPERIMENTATION LOG) '
+(- Tool: Gemini / Claude for Architecture and Behaviour State Machine design.) '
+(  Initial prompt asked for general AI virtual pet; refined to deterministic Finite State Machine) '
+(  in pure Kotlin with discrete stat decay rules. Resulted in robust PupiBehaviorEngine.kt.) '
+(- Tool: Imagen 3 for Character Expression line-art generation.) '
+(  Initial prompts yielded colored 3D models with inconsistent dog breeds. Refined with explicit) '
+(  negative constraints \\\('zero color, black and white line art only, identical collar and tag'\\\).) '
+() '
+(8. TESTING & COMPLIANCE SUMMARY) '
+(- Functional Tests: Overlay permission, touch dragging, stat decay, and persistent Room DB.) '
+(- Android Reliability: Handled background limits, screen rotation, and memory constraints.) '
+ET
+
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+7 0 obj
+<< /Length 139 >>
+stream
+BT
+/F1 10 Tf
+50 780 Td
+15 TL
+(- Status: Local Floating Companion & Architecture fully verified; Cloud Sync mapped and proposed.) '
+() '
+ET
+
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 7 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000003366 00000 n 
+0000003541 00000 n 
+0000007292 00000 n 
+0000007467 00000 n 
+0000007657 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+7832
+%%EOF

@@ -1,0 +1,4526 @@
+{
+  "frames": [
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_South_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 0.0,
+        "id": "ef651b63d144ac67",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Happy_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_South_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 0
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 0.0,
+        "id": "5510ee401b501fa2",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Happy_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_South_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 0
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 0.0,
+        "id": "cbf36cdf847eb9ee",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Happy_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_South_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 0
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 0.0,
+        "id": "a1817b9349bd9af5",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Happy_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_South_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 0
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 0.0,
+        "id": "2c4a9c590695d56d",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Happy_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_South_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 0
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 0.0,
+        "id": "a164f3fb114fa319",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Happy_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_East_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 64
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 90.0,
+        "id": "1aaf1f350b133e2e",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Happy_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_East_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 64
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 90.0,
+        "id": "7d0fd2c39fe82213",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Happy_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_East_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 64
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 90.0,
+        "id": "31dc4ae3222e70a7",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Happy_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_East_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 64
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 90.0,
+        "id": "3b7236cac5a204d0",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Happy_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_East_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 64
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 90.0,
+        "id": "c9f01c22f8a4adb8",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Happy_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_East_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 64
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 90.0,
+        "id": "82e8bbfa6f89f4ec",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Happy_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_North_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 128
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 180.0,
+        "id": "0d9f87b9549295d1",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Happy_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_North_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 128
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 180.0,
+        "id": "da2f526b55d0a7a0",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Happy_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_North_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 128
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 180.0,
+        "id": "011d7a87394c5824",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Happy_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_North_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 128
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 180.0,
+        "id": "c8d6825ebaf29923",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Happy_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_North_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 128
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 180.0,
+        "id": "bf73930cda5ea09f",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Happy_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_North_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 128
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 180.0,
+        "id": "0fa6718d59b86fe3",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Happy_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_West_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 192
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 270.0,
+        "id": "15c1a704ee0d8c90",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Happy_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_West_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 192
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 270.0,
+        "id": "1b9f54dfbed310a1",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Happy_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_West_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 192
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 270.0,
+        "id": "fbeb434934c96975",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Happy_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_West_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 192
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 270.0,
+        "id": "265d34956f8a886e",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Happy_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Happy_West_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 192
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 270.0,
+        "id": "db6a31d3aeab869a",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Happy_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Happy_West_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 192
+      },
+      "pixor": {
+        "action": "Happy",
+        "degrees": 270.0,
+        "id": "f37f485d567888be",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Happy_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_South_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "853b3356741eb81a",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_South_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "f799e0a6357a0a5f",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_South_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "b69201af5aa2892b",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_South_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "773f284de04633fc",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_South_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "554041c81d3c73cc",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_South_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "24fa90c8a499f2d8",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_South_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "9abe09254d5a4fe3",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_South_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 256
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 0.0,
+        "id": "e8c235bb689019dd",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Idle_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_East_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "e9927ffe55faf2bd",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_East_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "5304d2ab5ebb58bc",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_East_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "1f454fbb3a1e0fb8",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_East_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "4e5160817c86211f",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_East_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "c367f52ef7a59f53",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_East_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "7aa34aa7b56e590f",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_East_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "028be6c103aaa05c",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_East_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 320
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 90.0,
+        "id": "94e527780ad67436",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Idle_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_North_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "56ab714c9205671c",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_North_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "90fa79746b02989d",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_North_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "9a71965e83227449",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_North_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "f94bc5fd1ddc37fa",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_North_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "539695c78bbfc63e",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_North_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "164434e7a1a7a11a",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_North_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "284b4f2b27d80485",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_North_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 384
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 180.0,
+        "id": "0dbc146eb76ef047",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Idle_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_West_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "b51c49d0e28c0807",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_West_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "95b9f22af52e6d42",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_West_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "27ee04cd7dc55f4e",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_West_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "cbfa4654cb0e5d55",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_West_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "a353a043e3574c0d",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_West_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "46cf943a5b375779",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Idle_West_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "b65dea25b0c68b96",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Idle_West_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 448
+      },
+      "pixor": {
+        "action": "Idle",
+        "degrees": 270.0,
+        "id": "fa643d8f499ac9b0",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Idle_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "2de8771f0e580bbe",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_South_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "6c0ccfcc15df9683",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "9e085238ae2139b7",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "dbb9e980a5da7bc0",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_South_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "9a296dcd8b6f3ac8",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "70d8c98e3082593c",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "50d1faa15d1f1def",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_South_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "ed52ecb32e96e2f9",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_08.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 512,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "0e1eaca252fe1e1d",
+        "index": 8,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_09.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 576,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "ac83a673bfb7ed12",
+        "index": 9,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_South_10.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 640,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "4adefc45b6044baa",
+        "index": 10,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_South_11.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 704,
+        "y": 512
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 0.0,
+        "id": "e969522f25ab1eae",
+        "index": 11,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Sleep_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "4e5119097baaa991",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_East_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "459dbbba233540e0",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "d9ed3eaae58b5fe4",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "de96c13520eb7a63",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_East_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "17d1f40a5a0553df",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "74262d5ad31fc2a3",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "04e32fb0e1346318",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_East_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "a20770570a394a32",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_08.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 512,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "e00fc63fdc28c3d6",
+        "index": 8,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_09.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 576,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "4d4b0899890edcd9",
+        "index": 9,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_East_10.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 640,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "c8025803715311b5",
+        "index": 10,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_East_11.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 704,
+        "y": 576
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 90.0,
+        "id": "3b7ab643b18bec59",
+        "index": 11,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Sleep_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "19f8a234ce674270",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_North_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "0197b33ab0e09d01",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "2e73dacd8247aa15",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "c64726ee9be3378e",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_North_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "f7b2902ea39a88fa",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "2607dfe1a3f6c95e",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "ba509f2023f0f761",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_North_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "d1835e26b93af343",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_08.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 512,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "7adbf1bb533b8337",
+        "index": 8,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_09.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 576,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "70dc5898007d2374",
+        "index": 9,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_North_10.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 640,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "fb5eeb8727f43980",
+        "index": 10,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_North_11.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 704,
+        "y": 640
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 180.0,
+        "id": "d0ab7f9fe9261c44",
+        "index": 11,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Sleep_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "9c5fea1ef29fc753",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_West_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "9b1c0e8f06fa91ee",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "24398fef9dcbf7a2",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "6b20e48313f7f721",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_West_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "ad65adf14a05db51",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "c123092d274a2b55",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_06.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 384,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "0bf00d965041088a",
+        "index": 6,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_West_07.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 448,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "21f315bb1946f1d4",
+        "index": 7,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_08.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 512,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "0011e0ade9b6a9f8",
+        "index": 8,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_09.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 576,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "af6c97c54f2bb563",
+        "index": 9,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Sleep_West_10.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 640,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "5f2131ac97645b03",
+        "index": 10,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Sleep_West_11.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 704,
+        "y": 704
+      },
+      "pixor": {
+        "action": "Sleep",
+        "degrees": 270.0,
+        "id": "520cf598bdf01a77",
+        "index": 11,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Sleep_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_South_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 768
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 0.0,
+        "id": "33ff0ef809295115",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Walk_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_South_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 768
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 0.0,
+        "id": "5ddf04ab849faf14",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Walk_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_South_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 768
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 0.0,
+        "id": "1f83d65f5548e970",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Walk_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_South_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 768
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 0.0,
+        "id": "90dfbff57a6c4747",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Walk_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_South_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 768
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 0.0,
+        "id": "df103a21fefb6cfb",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Walk_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_South_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 768
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 0.0,
+        "id": "1a5dd14b32e1a307",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "South",
+        "tag": "Walk_South"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_East_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 832
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 90.0,
+        "id": "eb393c59f338033c",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Walk_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_East_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 832
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 90.0,
+        "id": "81c6e9acea779d3d",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Walk_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_East_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 832
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 90.0,
+        "id": "750dcd6daa09eda9",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Walk_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_East_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 832
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 90.0,
+        "id": "bbc699e1302cb1da",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Walk_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_East_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 832
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 90.0,
+        "id": "446306000b34cade",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Walk_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_East_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 832
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 90.0,
+        "id": "f0d06bf6c88d677a",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "East",
+        "tag": "Walk_East"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_North_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 896
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 180.0,
+        "id": "d7fa887b84e1dfc3",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Walk_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_North_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 896
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 180.0,
+        "id": "8222ff7205eb9e7e",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Walk_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_North_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 896
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 180.0,
+        "id": "ed6d789d8a5bce52",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Walk_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_North_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 896
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 180.0,
+        "id": "81752a2a8e899031",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Walk_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_North_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 896
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 180.0,
+        "id": "0c8c4a34a0d9cf41",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Walk_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_North_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 896
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 180.0,
+        "id": "8a56f1db13da0205",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "North",
+        "tag": "Walk_North"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_West_00.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 960
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 270.0,
+        "id": "860f5788b494b022",
+        "index": 0,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Walk_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_West_01.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 64,
+        "y": 960
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 270.0,
+        "id": "206384ac6a893ce7",
+        "index": 1,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Walk_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_West_02.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 128,
+        "y": 960
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 270.0,
+        "id": "d8f86761c71d5cd3",
+        "index": 2,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Walk_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_West_03.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 192,
+        "y": 960
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 270.0,
+        "id": "69c135643d52f7f4",
+        "index": 3,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Walk_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 84,
+      "filename": "puppy-shiba_Walk_West_04.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 256,
+        "y": 960
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 270.0,
+        "id": "265a0d03f48e3724",
+        "index": 4,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Walk_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 83,
+      "filename": "puppy-shiba_Walk_West_05.png",
+      "frame": {
+        "h": 64,
+        "w": 64,
+        "x": 320,
+        "y": 960
+      },
+      "pixor": {
+        "action": "Walk",
+        "degrees": 270.0,
+        "id": "cf067dfd227eeb00",
+        "index": 5,
+        "pivot": {
+          "x": 32,
+          "y": 54
+        },
+        "side": "West",
+        "tag": "Walk_West"
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "app": "Pixor",
+    "format": "I8",
+    "frameTags": [
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 0,
+        "name": "Happy_South",
+        "to": 5
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 6,
+        "name": "Happy_East",
+        "to": 11
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 12,
+        "name": "Happy_North",
+        "to": 17
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 18,
+        "name": "Happy_West",
+        "to": 23
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 24,
+        "name": "Idle_South",
+        "to": 31
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 32,
+        "name": "Idle_East",
+        "to": 39
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 40,
+        "name": "Idle_North",
+        "to": 47
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 48,
+        "name": "Idle_West",
+        "to": 55
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 56,
+        "name": "Sleep_South",
+        "to": 67
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 68,
+        "name": "Sleep_East",
+        "to": 79
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 80,
+        "name": "Sleep_North",
+        "to": 91
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 92,
+        "name": "Sleep_West",
+        "to": 103
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 104,
+        "name": "Walk_South",
+        "to": 109
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 110,
+        "name": "Walk_East",
+        "to": 115
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 116,
+        "name": "Walk_North",
+        "to": 121
+      },
+      {
+        "color": "#000000ff",
+        "direction": "forward",
+        "from": 122,
+        "name": "Walk_West",
+        "to": 127
+      }
+    ],
+    "image": "puppy-shiba_64px_scroller_outline_lit.png",
+    "layers": [
+      {
+        "blendMode": "normal",
+        "name": "final",
+        "opacity": 255
+      }
+    ],
+    "pixor": {
+      "cell": {
+        "h": 64,
+        "w": 64
+      },
+      "emission": "s_emission.png",
+      "pivot": {
+        "x": 32,
+        "y": 54
+      },
+      "sides": {
+        "East": 90.0,
+        "North": 180.0,
+        "South": 0.0,
+        "West": 270.0
+      }
+    },
+    "scale": "1",
+    "size": {
+      "h": 1024,
+      "w": 768
+    },
+    "slices": [
+      {
+        "color": "#0000ffff",
+        "keys": [
+          {
+            "bounds": {
+              "h": 64,
+              "w": 64,
+              "x": 0,
+              "y": 0
+            },
+            "frame": 0,
+            "pivot": {
+              "x": 32,
+              "y": 54
+            }
+          }
+        ],
+        "name": "pivot"
+      }
+    ],
+    "version": "2.1.0"
+  }
+}
