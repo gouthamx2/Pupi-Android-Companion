@@ -20,6 +20,9 @@ class PupiBehaviorEngine(
     fun getAttributes(): PetAttributes = attributes
     fun getCurrentState(): PupiBehaviorState = currentState
     fun getCurrentEmotion(): PupiEmotion = currentEmotion
+    fun isInactiveFor30Seconds(): Boolean {
+        return System.currentTimeMillis() - lastInteractionTimestamp >= 30_000L
+    }
 
     /**
      * Regular heartbeat tick (called periodically, e.g. every 10-30 seconds).
@@ -135,6 +138,7 @@ class PupiBehaviorEngine(
     }
 
     fun onDragStart(): PupiBehaviorState {
+        lastInteractionTimestamp = System.currentTimeMillis()
         currentState = PupiBehaviorState.JUMPING
         return currentState
     }

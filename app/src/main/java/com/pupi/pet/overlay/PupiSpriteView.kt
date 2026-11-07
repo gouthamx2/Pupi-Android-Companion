@@ -31,7 +31,9 @@ class PupiSpriteView @JvmOverloads constructor(
         JUMP,
         SURPRISE,
         HAPPY,
-        CUDDLE
+        CUDDLE,
+        ANGRY,
+        SAD
     }
 
     private var spriteSheet: Bitmap? = null
@@ -80,6 +82,12 @@ class PupiSpriteView @JvmOverloads constructor(
     private val mouthPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = android.graphics.Color.rgb(55, 30, 25)
         style = Paint.Style.FILL
+    }
+    private val expressionPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        color = android.graphics.Color.rgb(65, 40, 35)
+        strokeWidth = 3f
+        style = Paint.Style.STROKE
+        strokeCap = Paint.Cap.ROUND
     }
 
     private val tonguePaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
@@ -235,7 +243,17 @@ class PupiSpriteView @JvmOverloads constructor(
         playAnimation("Sleep", "South")
         startReaction(Reaction.CUDDLE, 5000L)
     }
+    // Angry expression: 3 seconds.
+    fun playAngryReaction() {
+        playAnimation("Idle", "South")
+        startReaction(Reaction.ANGRY, 3000L)
+    }
 
+    // Sad expression: 4 seconds.
+    fun playSadReaction() {
+        playAnimation("Idle", "South")
+        startReaction(Reaction.SAD, Long.MAX_VALUE)
+    }
     private fun startReaction(
         reaction: Reaction,
         duration: Long
@@ -272,6 +290,15 @@ class PupiSpriteView @JvmOverloads constructor(
         return (elapsed.toFloat() / reactionDuration)
             .coerceIn(0f, 1f)
     }
+    fun clearReaction() {
+        if (currentReaction == Reaction.SAD) {
+            currentReaction = Reaction.NONE
+            reactionDuration = 0L
+            reactionStartTime = 0L
+            invalidate()
+        }
+    }
+
 
     private fun updateSpriteFrame(
         frames: List<SpriteFrame>,
@@ -458,7 +485,128 @@ class PupiSpriteView @JvmOverloads constructor(
             happyTonguePaint
         )
     }
+    private fun drawAngryFace(canvas: Canvas, left: Float, top: Float, size: Float) {
+        val eyeY = top + size * 0.44f
 
+        expressionPaint.strokeWidth = size * 0.025f
+
+        // Narrowed angry eyes
+        canvas.drawOval(
+            left + size * 0.34f, eyeY,
+            left + size * 0.47f, eyeY + size * 0.07f,
+            eyeWhitePaint
+        )
+        canvas.drawOval(
+            left + size * 0.53f, eyeY,
+            left + size * 0.66f, eyeY + size * 0.07f,
+            eyeWhitePaint
+        )
+
+        // Angry eyebrows
+        canvas.drawLine(
+            left + size * 0.34f, top + size * 0.42f,
+            left + size * 0.47f, top + size * 0.46f,
+            expressionPaint
+        )
+        canvas.drawLine(
+            left + size * 0.66f, top + size * 0.42f,
+            left + size * 0.53f, top + size * 0.46f,
+            expressionPaint
+        )
+
+        // Frowning mouth
+        val mouth = android.graphics.Path().apply {
+            moveTo(left + size * 0.43f, top + size * 0.58f)
+            quadTo(
+                left + size * 0.50f, top + size * 0.52f,
+                left + size * 0.57f, top + size * 0.58f
+            )
+        }
+
+        canvas.drawPath(mouth, expressionPaint)
+    }
+    private fun drawSadFace(canvas: Canvas, left: Float, top: Float, size: Float) {
+        val eyeY = top + size * 0.445f
+
+        expressionPaint.strokeWidth = size * 0.018f
+
+        // Soft, slightly drooping white eyes
+        canvas.drawOval(
+            left + size * 0.37f, eyeY,
+            left + size * 0.46f, eyeY + size * 0.065f,
+            eyeWhitePaint
+        )
+
+        canvas.drawOval(
+            left + size * 0.54f, eyeY,
+            left + size * 0.63f, eyeY + size * 0.065f,
+            eyeWhitePaint
+        )
+
+        // Dark pupils looking upward and inward
+        canvas.drawCircle(
+            left + size * 0.425f,
+            eyeY + size * 0.022f,
+            size * 0.019f,
+            sadPupilPaint
+        )
+
+        canvas.drawCircle(
+            left + size * 0.575f,
+            eyeY + size * 0.022f,
+            size * 0.019f,
+            sadPupilPaint
+        )
+
+        // Tiny eye highlights
+        canvas.drawCircle(
+            left + size * 0.420f,
+            eyeY + size * 0.016f,
+            size * 0.006f,
+            sadPupilHighlightPaint
+        )
+
+        canvas.drawCircle(
+            left + size * 0.570f,
+            eyeY + size * 0.016f,
+            size * 0.006f,
+            sadPupilHighlightPaint
+        )
+
+        // Sad eyebrows: raised towards the centre
+        canvas.drawLine(
+            left + size * 0.35f, top + size * 0.445f,
+            left + size * 0.46f, top + size * 0.405f,
+            expressionPaint
+        )
+
+        canvas.drawLine(
+            left + size * 0.65f, top + size * 0.445f,
+            left + size * 0.54f, top + size * 0.405f,
+            expressionPaint
+        )
+
+        // Gentle sad mouth
+        val mouth = android.graphics.Path().apply {
+            moveTo(left + size * 0.43f, top + size * 0.59f)
+            quadTo(
+                left + size * 0.50f, top + size * 0.55f,
+                left + size * 0.57f, top + size * 0.59f
+            )
+        }
+
+        canvas.drawPath(mouth, expressionPaint)
+
+    }
+    private val sadPupilPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        color = android.graphics.Color.rgb(55, 35, 30)
+        style = Paint.Style.FILL
+    }
+
+    private val sadPupilHighlightPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        color = android.graphics.Color.WHITE
+        style = Paint.Style.FILL
+    }
     override fun onDraw(canvas: Canvas) {
 
         super.onDraw(canvas)
@@ -476,7 +624,9 @@ class PupiSpriteView @JvmOverloads constructor(
         if (
             currentReaction != Reaction.JUMP &&
             currentReaction != Reaction.SURPRISE &&
-            currentReaction != Reaction.HAPPY
+            currentReaction != Reaction.HAPPY &&
+            currentReaction != Reaction.SAD &&
+            currentReaction != Reaction.ANGRY
         ) {
             updateSpriteFrame(frames, now)
         }
@@ -486,7 +636,9 @@ class PupiSpriteView @JvmOverloads constructor(
             if (
                 currentReaction == Reaction.JUMP ||
                 currentReaction == Reaction.SURPRISE ||
-                currentReaction == Reaction.HAPPY
+                currentReaction == Reaction.HAPPY ||
+                currentReaction == Reaction.SAD ||
+                currentReaction == Reaction.ANGRY
             ) {
 
                 frames[
@@ -599,6 +751,8 @@ class PupiSpriteView @JvmOverloads constructor(
             }
 
             Reaction.NONE -> Unit
+            Reaction.ANGRY -> Unit
+            Reaction.SAD -> Unit
         }
 
         // Draw original puppy sprite.
@@ -623,6 +777,13 @@ class PupiSpriteView @JvmOverloads constructor(
 
             Reaction.HAPPY -> {
                 drawHappyFace(canvas, left, top, size)
+            }
+            Reaction.ANGRY -> {
+                drawAngryFace(canvas, left, top, size)
+
+            }
+            Reaction.SAD -> {
+                drawSadFace(canvas, left, top, size)
             }
 
             else -> Unit

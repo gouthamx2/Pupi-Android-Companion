@@ -55,6 +55,7 @@ class PupiFloatingService : Service() {
 
     private var happyUntil = 0L
     private var cuddleUntil = 0L
+    private var sadUntil = 0L
 
     private var touchDownTime = 0L
     private var touchDownY = 0f
@@ -168,6 +169,8 @@ class PupiFloatingService : Service() {
             MotionEvent.ACTION_DOWN -> {
 
                 touchDownTime = SystemClock.uptimeMillis()
+                sadUntil = 0L
+                pupiView?.clearReaction()
                 touchDownY = event.y
 
                 initialX = layoutParams.x
@@ -567,18 +570,20 @@ class PupiFloatingService : Service() {
     }
 
     private fun startEngineHeartbeat() {
-
         tickerJob = serviceScope.launch {
-
             while (isActive) {
-
                 delay(15_000L)
-
                 engine.tick(0.25f)
+
+                if (engine.isInactiveFor30Seconds() && sadUntil == 0L) {
+                    sadUntil = Long.MAX_VALUE
+                    pupiView?.playSadReaction()
+                } else if (!engine.isInactiveFor30Seconds()) {
+                    sadUntil = 0L
+                }
             }
         }
     }
-
     private fun startAutonomousMovement() {
 
         movementJob = serviceScope.launch {
@@ -626,6 +631,10 @@ class PupiFloatingService : Service() {
 
                     walking = false
 
+                    delay(50L)
+                    continue
+                }
+                if (now < sadUntil) {
                     delay(50L)
                     continue
                 }
