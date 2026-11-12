@@ -137,7 +137,7 @@
   </div>
 
   <h2>1. Product Identity & Core Architectural Decision</h2>
-  <p><strong>Strict Product Rule:</strong> There is NO dedicated pet-care application experience, no pet home screen, and no separate in-app pet environment. A minimal Android host interface is used solely as an onboarding gate for essential Android system permissions (<code>SYSTEM_ALERT_WINDOW</code>, battery optimization, and optional audio recording). The floating 3D companion is the entire product experience.</p>
+  <p><strong>Strict Product Rule:</strong> There is NO dedicated pet-care application experience, no pet home screen, and no separate in-app pet environment. A minimal Android host interface is used solely as an onboarding gate for essential Android system permissions (<code>SYSTEM_ALERT_WINDOW</code>, battery optimization,). The floating 3D companion is the entire product experience.</p>
 
   <h2>2. Recommended Technology Stack (Optimized for Intel i3 / 8GB RAM)</h2>
   <table>
@@ -161,11 +161,7 @@
       <td><strong>Room Database</strong></td>
       <td>Local, offline-first SQLite persistence with Flow-based reactive queries for pet attributes, inventory, and interaction memories.</td>
     </tr>
-    <tr>
-      <td><strong>Voice & Audio</strong></td>
-      <td><strong>SpeechRecognizer & TextToSpeech</strong></td>
-      <td>Native Android offline speech recognition and low-latency synthesized speech without cloud dependency or billing costs.</td>
-    </tr>
+
     <tr>
       <td><strong>Minimal Host UI</strong></td>
       <td><strong>Jetpack Compose</strong></td>

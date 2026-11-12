@@ -227,11 +227,11 @@ class PupiSpriteView @JvmOverloads constructor(
     }
 
     // Body tap: surprise reaction for 800 milliseconds.
-    fun playSurpriseReaction() {
+    // Body tap: angry reaction for 800 milliseconds.
+    fun playAngryReaction() {
         playAnimation("Idle", "South")
         startReaction(Reaction.SURPRISE, 800L)
     }
-
     // Double tap: happy expression for 3 seconds.
     fun playHappyReaction() {
         playAnimation("Idle", "South")
@@ -244,7 +244,8 @@ class PupiSpriteView @JvmOverloads constructor(
         startReaction(Reaction.CUDDLE, 5000L)
     }
     // Angry expression: 3 seconds.
-    fun playAngryReaction() {
+    // Surprise expression: 3 seconds.
+    fun playSurpriseReaction() {
         playAnimation("Idle", "South")
         startReaction(Reaction.ANGRY, 3000L)
     }

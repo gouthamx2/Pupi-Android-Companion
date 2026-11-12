@@ -373,8 +373,7 @@ class PupiFloatingService : Service() {
 
             // Keep autonomous movement paused for the surprise.
             happyUntil = now + 800L
-
-            pupiView?.playSurpriseReaction()
+            pupiView?.playAngryReaction()
             soundManager.play("tap_surprise")
         }
 
