@@ -51,7 +51,7 @@ class PupiFloatingService : Service() {
     private var initialTouchY = 0f
 
     private var isDragging = false
-    private var isSecondTapInProgress = false
+    private var pendingTapCount = 0
 
     private var happyUntil = 0L
     private var cuddleUntil = 0L
@@ -181,11 +181,8 @@ class PupiFloatingService : Service() {
 
                 isDragging = false
 
-                // Check whether this is the second tap.
-                isSecondTapInProgress =
-                    pendingTapJob?.isActive == true
-
-                if (isSecondTapInProgress) {
+                // Pause the tap timer while another gesture is happening.
+                if (pendingTapCount > 0) {
                     pendingTapJob?.cancel()
                     pendingTapJob = null
                 }
@@ -205,18 +202,9 @@ class PupiFloatingService : Service() {
                         jumpJob?.cancel()
                         engine.onDragStart()
 
-                        // If the second gesture becomes a drag,
-                        // restore the first tap as a normal single tap.
-                        if (isSecondTapInProgress) {
-
-                            val previousZone = pendingTapZone
-
-                            pendingTapZone = null
-                            isSecondTapInProgress = false
-
-                            if (previousZone != null) {
-                                scheduleSingleTap(previousZone)
-                            }
+                        // Preserve any completed taps before the drag.
+                        if (pendingTapCount > 0) {
+                            scheduleTapSequence()
                         }
                     }
 
@@ -256,8 +244,8 @@ class PupiFloatingService : Service() {
                         // Long press: cuddle.
                         pendingTapJob?.cancel()
                         pendingTapJob = null
+                        pendingTapCount = 0
                         pendingTapZone = null
-                        isSecondTapInProgress = false
 
                         jumpJob?.cancel()
 
@@ -275,31 +263,20 @@ class PupiFloatingService : Service() {
 
                     } else {
 
-                        if (isSecondTapInProgress) {
-
-                            // Double tap: Happy.
-                            pendingTapZone = null
-                            isSecondTapInProgress = false
-
-                            performHappyReaction()
-
-                        } else {
-
-                            // Wait before deciding this is a single tap.
-                            scheduleSingleTap(touchZone)
+                        // Count this tap and wait for the next one.
+                        if (pendingTapCount == 0) {
+                            pendingTapZone = touchZone
                         }
+
+                        pendingTapCount++
+                        scheduleTapSequence()
                     }
 
-                } else if (isSecondTapInProgress) {
+                } else {
 
-                    // A second gesture ended as a drag.
-                    val previousZone = pendingTapZone
-
-                    pendingTapZone = null
-                    isSecondTapInProgress = false
-
-                    if (previousZone != null) {
-                        scheduleSingleTap(previousZone)
+                    // Finish dragging and preserve any earlier taps.
+                    if (pendingTapCount > 0) {
+                        scheduleTapSequence()
                     }
                 }
 
@@ -310,18 +287,9 @@ class PupiFloatingService : Service() {
 
             MotionEvent.ACTION_CANCEL -> {
 
-                // Do not lose the first tap if the second gesture
-                // is cancelled by the system.
-                if (isSecondTapInProgress) {
-
-                    val previousZone = pendingTapZone
-
-                    pendingTapZone = null
-                    isSecondTapInProgress = false
-
-                    if (previousZone != null) {
-                        scheduleSingleTap(previousZone)
-                    }
+                // Preserve completed taps if the current gesture is cancelled.
+                if (pendingTapCount > 0) {
+                    scheduleTapSequence()
                 }
 
                 isDragging = false
@@ -332,25 +300,40 @@ class PupiFloatingService : Service() {
 
         return false
     }
-
-    // Delays a single tap so a second tap can be detected.
-    private fun scheduleSingleTap(touchZone: String) {
+    private fun scheduleTapSequence() {
 
         pendingTapJob?.cancel()
-
-        pendingTapZone = touchZone
 
         pendingTapJob = serviceScope.launch {
 
             delay(350L)
 
+            val tapCount = pendingTapCount
+            val touchZone = pendingTapZone
+
+            pendingTapCount = 0
             pendingTapZone = null
             pendingTapJob = null
 
-            performSingleTap(touchZone)
+            when (tapCount) {
+
+                1 -> {
+                    if (touchZone != null) {
+                        performSingleTap(touchZone)
+                    }
+                }
+
+                2 -> {
+                    // Double tap: intentionally no reaction.
+                }
+
+                3 -> {
+                    // Triple tap: existing Happy reaction.
+                    performHappyReaction()
+                }
+            }
         }
     }
-
     // Handles the normal head tap or body tap.
     private fun performSingleTap(touchZone: String) {
 
@@ -390,7 +373,6 @@ class PupiFloatingService : Service() {
             Toast.LENGTH_SHORT
         ).show()
     }
-
     // Handles a double tap anywhere on Pupi.
     private fun performHappyReaction() {
 
