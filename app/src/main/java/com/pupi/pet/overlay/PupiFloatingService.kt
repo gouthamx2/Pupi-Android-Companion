@@ -324,7 +324,8 @@ class PupiFloatingService : Service() {
                 }
 
                 2 -> {
-                    // Double tap: intentionally no reaction.
+                    happyUntil = SystemClock.uptimeMillis() + 3000L
+                    pupiView?.playSurpriseReaction()
                 }
 
                 3 -> {

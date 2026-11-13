@@ -230,7 +230,7 @@ class PupiSpriteView @JvmOverloads constructor(
     // Body tap: angry reaction for 800 milliseconds.
     fun playAngryReaction() {
         playAnimation("Idle", "South")
-        startReaction(Reaction.SURPRISE, 800L)
+        startReaction(Reaction.ANGRY, 800L)
     }
     // Double tap: happy expression for 3 seconds.
     fun playHappyReaction() {
@@ -247,7 +247,7 @@ class PupiSpriteView @JvmOverloads constructor(
     // Surprise expression: 3 seconds.
     fun playSurpriseReaction() {
         playAnimation("Idle", "South")
-        startReaction(Reaction.ANGRY, 3000L)
+        startReaction(Reaction.SURPRISE, 3000L)
     }
 
     // Sad expression: 4 seconds.
@@ -320,7 +320,7 @@ class PupiSpriteView @JvmOverloads constructor(
     }
 
     // Draw the surprised eyes and open mouth.
-    private fun drawSurprisedFace(
+    private fun drawAngryFace(
         canvas: Canvas,
         left: Float,
         top: Float,
@@ -429,6 +429,104 @@ class PupiSpriteView @JvmOverloads constructor(
         )
     }
 
+    private fun drawSurprisedFace(
+        canvas: Canvas,
+        left: Float,
+        top: Float,
+        size: Float
+    ) {
+        // 1. Wide-open eyes
+        val eyeY = top + size * 0.43f
+        val leftEyeX = left + size * 0.39f
+        val rightEyeX = left + size * 0.61f
+
+        val eyeWidth = size * 0.043f
+        val eyeHeight = size * 0.058f
+
+        canvas.drawOval(
+            leftEyeX - eyeWidth,
+            eyeY - eyeHeight,
+            leftEyeX + eyeWidth,
+            eyeY + eyeHeight,
+            eyeWhitePaint
+        )
+
+        canvas.drawOval(
+            rightEyeX - eyeWidth,
+            eyeY - eyeHeight,
+            rightEyeX + eyeWidth,
+            eyeY + eyeHeight,
+            eyeWhitePaint
+        )
+
+        // 2. Pupils looking upwards
+        val pupilRadius = size * 0.019f
+
+        canvas.drawCircle(
+            leftEyeX,
+            eyeY - size * 0.012f,
+            pupilRadius,
+            pupilPaint
+        )
+
+        canvas.drawCircle(
+            rightEyeX,
+            eyeY - size * 0.012f,
+            pupilRadius,
+            pupilPaint
+        )
+
+        // 3. Eye reflections
+        val highlightRadius = size * 0.008f
+
+        canvas.drawCircle(
+            leftEyeX - size * 0.006f,
+            eyeY - size * 0.025f,
+            highlightRadius,
+            eyeHighlightPaint
+        )
+
+        canvas.drawCircle(
+            rightEyeX - size * 0.006f,
+            eyeY - size * 0.025f,
+            highlightRadius,
+            eyeHighlightPaint
+        )
+
+        // 4. Very raised eyebrows
+        val leftBrow = android.graphics.Path().apply {
+            moveTo(left + size * 0.32f, eyeY - size * 0.09f)
+            quadTo(
+                left + size * 0.39f,
+                eyeY - size * 0.19f,
+                left + size * 0.46f,
+                eyeY - size * 0.09f
+            )
+        }
+
+        val rightBrow = android.graphics.Path().apply {
+            moveTo(left + size * 0.54f, eyeY - size * 0.09f)
+            quadTo(
+                left + size * 0.61f,
+                eyeY - size * 0.19f,
+                left + size * 0.68f,
+                eyeY - size * 0.09f
+            )
+        }
+
+        canvas.drawPath(leftBrow, eyebrowPaint)
+        canvas.drawPath(rightBrow, eyebrowPaint)
+
+        // 5. Big shocked O-shaped mouth
+        canvas.drawOval(
+            left + size * 0.455f,
+            top + size * 0.545f,
+            left + size * 0.545f,
+            top + size * 0.665f,
+            mouthPaint
+        )
+    }
+
     private fun drawHappyFace(
         canvas: Canvas,
         left: Float,
@@ -486,46 +584,7 @@ class PupiSpriteView @JvmOverloads constructor(
             happyTonguePaint
         )
     }
-    private fun drawAngryFace(canvas: Canvas, left: Float, top: Float, size: Float) {
-        val eyeY = top + size * 0.44f
 
-        expressionPaint.strokeWidth = size * 0.025f
-
-        // Narrowed angry eyes
-        canvas.drawOval(
-            left + size * 0.34f, eyeY,
-            left + size * 0.47f, eyeY + size * 0.07f,
-            eyeWhitePaint
-        )
-        canvas.drawOval(
-            left + size * 0.53f, eyeY,
-            left + size * 0.66f, eyeY + size * 0.07f,
-            eyeWhitePaint
-        )
-
-        // Angry eyebrows
-        canvas.drawLine(
-            left + size * 0.34f, top + size * 0.42f,
-            left + size * 0.47f, top + size * 0.46f,
-            expressionPaint
-        )
-        canvas.drawLine(
-            left + size * 0.66f, top + size * 0.42f,
-            left + size * 0.53f, top + size * 0.46f,
-            expressionPaint
-        )
-
-        // Frowning mouth
-        val mouth = android.graphics.Path().apply {
-            moveTo(left + size * 0.43f, top + size * 0.58f)
-            quadTo(
-                left + size * 0.50f, top + size * 0.52f,
-                left + size * 0.57f, top + size * 0.58f
-            )
-        }
-
-        canvas.drawPath(mouth, expressionPaint)
-    }
     private fun drawSadFace(canvas: Canvas, left: Float, top: Float, size: Float) {
         val eyeY = top + size * 0.445f
 
@@ -772,10 +831,12 @@ class PupiSpriteView @JvmOverloads constructor(
         // Draw expressions over the puppy sprite.
         when (currentReaction) {
 
+            Reaction.ANGRY -> {
+                drawAngryFace(canvas, left, top, size)
+            }
             Reaction.SURPRISE -> {
                 drawSurprisedFace(canvas, left, top, size)
             }
-
             Reaction.HAPPY -> {
                 drawHappyFace(canvas, left, top, size)
             }
